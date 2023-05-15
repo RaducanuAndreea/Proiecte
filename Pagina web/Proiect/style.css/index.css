@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background-img {
+  background-image: url("Books-17.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  -ms-overflow-style: none; /* IE and Edge */
+  -webkit-filter: blur(0.15rem);
+  position: absolute;
+}
+
+.bg-text {
+  font: italic 1.2em "Fira Sans", serif;
+  background-color:#8d7b68a7;
+  color: rgba(0, 0, 0, 0.778);
+  border: 3px solid #333333;
+  position: absolute;
+  top: 35vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.button {
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.button > a,
+.button button {
+  position: relative;
+  cursor: pointer;
+  padding: 12px 36px;
+  margin: 10px 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #8d7b68c2, #c8b6a6bf);
+  border: 1px solid black;
+}
+
+.button > a {
+  background: linear-gradient(90deg, #c8b6a6b4, #8d7b68c8);
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.SignUp {
+  background: linear-gradient(90deg, #8d7b68c1, #c8b6a6d1);
+  border-radius: 40px;
+  text-decoration: none;
+  position: fixed;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin: 5px;
+  width: 300px;
+  padding: 10px;
+  text-align: left;
+  top: 65vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #C8B6A6;
+  border: 1px solid black;
+}
+
+.SignUp > p > a {
+  color: #000101;
+  text-decoration: none;
+  position: absolute;
+  margin-left: 10px;
+  
+}
+
+input[type="submit"] {
+  width: 272px;
+  color: #6e6e6e;
+}
+
+#clear {
+  clear: both;
+}
+
+.comm {
+  position: absolute;
+  visibility: hidden;
+}
+#login {
+  visibility: visible;
+}
+
+h3 {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px 15px;
+  font-size: 1.5em;
+  color: #000000;
+}
+
+#forgot h3 {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#forgot div {
+  margin-top: 30px;
+}
+
+p {
+  padding: 10px 15px;
+  font-size: 1.3em;
+  color: #ffffff;
+}

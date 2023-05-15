@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css/forgot.css" />
+    <link rel="icon" href="carte.jpg" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background-img"></div>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <h2>Recover Password</h2>
+          <div class="inputbox">
+            <i class="bx bxs-envelope"></i>
+            <input id="fe" type="email" required />
+            <label for="">Email</label>
+          </div>
+          <button onclick="forgot()">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var input = document.getElementById("fe");
+
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          forgot();
+        }
+      });
+      function forgot() {
+        var email = document.getElementById("fe").value;
+
+        const password = sessionStorage.getItem(email);
+        if (!password) {
+          if (
+            confirm("This email is not registered\n Do you want to register?")
+          ) {
+            window.location.href = "/SignUp.html";
+          } else {
+            document.getElementById("fe").value = "";
+          }
+        } else {
+          alert(
+            `Your password is ${password.split(";")[0]}, stop forgeting it!`
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

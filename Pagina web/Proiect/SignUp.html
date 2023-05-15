@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css/SignUp.css" />
+    <link rel="icon" href="carte.jpg" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="background-img"></div>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <h2>Sign Up</h2>
+          <div class="inputbox">
+            <i class="bx bx-male-female"></i>
+            <input id="name" type="text" required/>
+            <label for="">Nume</label>
+            <div id="nerror" class="error"></div>
+          </div>
+          <div class="inputbox">
+            <i class="bx bxs-envelope"></i>
+            <input id="email" type="text" required/>
+            <label for="">Email</label>
+            <div id="eerror" class="error"></div>
+          </div>
+          <div class="inputbox">
+            <i class="bx bxs-invader"></i>
+            <input id="username" type="text" required/>
+            <label for="">Username</label>
+            <div id="uerror" class="error"></div>
+          </div>
+          <div class="inputbox">
+            <i class="bx bxs-lock"></i>
+            <input type="password" required/>
+            <label for="">Password</label>
+            <div id="perror" class="error"></div>
+          </div>
+          <div class="inputbox">
+            <i class="bx bxs-lock"></i>
+            <input type="password" required/>
+            <label for="">Repeta parola</label>
+            <div id="rperror" class="error"></div>
+          </div>
+          <div id ="file-wrap"><label for="file-upload" class="custom-file-upload">
+            Custom Upload
+          </label>
+          <input id="file-upload" type="file" accept="image/jpg image/jpeg image/png"/>
+          <img id="path" ></img></div>
+          
+          <div class="terms">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">
+              Accept termenii si conditiile <a href="#">Termenii si conditii</a>
+            </label>
+          </div>
+          <button onclick="register()">Inregistrea-te acum</button>
+          <p>Logeaza-te <a href="LogIn.html"> aici </a></p>
+        </div>
+      </div>
+    </section>
+    <script src="SignUp.js"></script>
+  </body>
+</html>
