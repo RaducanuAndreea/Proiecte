@@ -1,0 +1,4 @@
+andrei,123456,6030622210318,student,raducanu,andreea,18
+andreeaCristina,fuck,124324367576865,pensionar,niculae,andra,20
+andra123,doamneajuta,763426747283659,soldat,florescu,silviu,50
+andra,1123456,6....7,fata de preot,Maria,Niculae,11
